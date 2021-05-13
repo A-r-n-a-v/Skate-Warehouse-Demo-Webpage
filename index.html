@@ -14,7 +14,8 @@
 
     <style>
         body {
-            margin: 0px;
+            padding: 0px 20px 0px 20px;
+            background: #f2f2f2;
         }
 
         .primary {
@@ -41,6 +42,10 @@
             min-height: 400px;
         }
 
+        .navbar-light {
+            background-color: #ffffff;
+        }
+
         #search-bar {
             display: none;
         }
@@ -48,62 +53,68 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-            <!-- navbar toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="container">
+        <div class="row justify-content-center">
+            <nav class="col-12 navbar navbar-light navbar-expand-sm m-0 p-0" width="80%">
+                <div class="container">
+                    <!-- <div class="row"> -->
+                        <!-- navbar toggler -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-            <!-- company name -->
-            <div>
-                <h1 class="primary text-white px-3 pb-2 m-0">
-                    SKATE
-                </h1>
-                <p class="warehouse bg-dark text-light pt-0 px-3 pb-3">
-                    WAREHOUSE
-                </p>
-            </div>
+                        <!-- company name -->
+                        <div class="col-12 col-md-3 p-0" style="background: yellow;">
+                            <h1 class="primary text-white text-center pb-2 m-0">
+                                SKATE
+                            </h1>
+                            <p class="warehouse bg-dark text-light text-center pb-3 m-0">
+                                WAREHOUSE
+                            </p>
+                        </div>
 
-            <!-- navigation links -->
-            <div class="justify-content-end">
-                <ul class="navbar-nav justify-content-end">
-                    <li class="nav-item mx-md-3">
-                        <a class="nav-link" herf="#"><i class="fas fa-shopping-cart"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Wish List</a>
-                    </li>
-                </ul>
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav mr-auto">
-                        <!-- search -->
-                        <li class="nav-item mx-md-3">
-                            <a id="search-sign" class="nav-link" href="#"><span class="fas fa-search"></span>
-                                SEARCH</a>
-                            <input id="search-bar" class="form-control" type="search" placeholder="Search"
-                                aria-label="Search">
-                        </li>
-                        <!-- support -->
-                        <li class="nav-item mx-md-3">
-                            <a class="nav-link" href="#">SUPPORT</a>
-                        </li>
-                        <!-- gift card -->
-                        <li class="nav-item mx-md-3">
-                            <a class="nav-link" href="#">GIFT CARD</a>
-                        </li>
-                        <!-- login -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">LOGIN</a>
-                        </li>
-                    </ul>
+                        <!-- navigation links -->
+                        <div class="col-12 col-md-9 justify-content-end" style="background: blue;">
+                            <ul class="navbar-nav justify-content-end">
+                                <li class="nav-item mx-md-3">
+                                    <a class="nav-link" herf="#"><i class="fas fa-shopping-cart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Wish List</a>
+                                </li>
+                            </ul>
+                            <div class="collapse navbar-collapse" id="Navbar">
+                                <ul class="navbar-nav mr-auto  justify-content-end">
+                                    <!-- search -->
+                                    <li class="nav-item mx-md-3">
+                                        <a id="search-sign" class="nav-link" href="#"><span
+                                                class="fas fa-search"></span>
+                                            SEARCH</a>
+                                        <input id="search-bar" class="form-control" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                    </li>
+                                    <!-- support -->
+                                    <li class="nav-item mx-md-3">
+                                        <a class="nav-link" href="#">SUPPORT</a>
+                                    </li>
+                                    <!-- gift card -->
+                                    <li class="nav-item mx-md-3">
+                                        <a class="nav-link" href="#">GIFT CARD</a>
+                                    </li>
+                                    <!-- login -->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">LOGIN</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- </div> -->
                 </div>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </div>
 
     <!-- <hr class="bg-primary" style="background-color: blue;" width="100%"> -->
-
 
     <!-- Header -->
     <header>
