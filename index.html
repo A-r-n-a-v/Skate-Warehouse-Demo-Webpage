@@ -12,33 +12,62 @@
     <title>Skate Warehouse</title>
 
     <style>
+        body{
+            margin: 0px;
+        }
         .primary{
             background-color: orangered;
         }
+        .row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar{
+    padding-top: 0px;
+}
+
+.navbar-dark {
+    background: #512da8;
+}
+
+.warehouse{
+    line-height: 0.7;
+}
     </style>
 </head>
 
-<body>
+<body> 
     <nav class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div>
-                <h1 class="primary text-white px-3 pb-2 mb-0">
+                <h1 class="primary text-white px-3 pb-2 m-0">
                     SKATE
                 </h1>
-                <p class="bg-dark text-white text-center mt-0 pt-0">
+                <p class="warehouse bg-dark text-light pt-0 px-3 pb-3">
                     WAREHOUSE
                 </p>
             </div>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+                        <input class="form-control" type="search" aria-label="Search">
+                        SEARCH
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
@@ -54,7 +83,6 @@
                             Contact</a>
                     </li>
                 </ul>
-                <!-- Login button -->
                 <span class="navbar-text">
                     <a id="loginButton">
                         <span class="fa fa-sign-in"></span> Login
