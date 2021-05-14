@@ -61,14 +61,19 @@
             border-left: 4px solid orangered;
         }
 
-        /* this is for left navbar sublinks */        
-        .leftnav-sub{
+        /* this is for left navbar sublinks */
+        .leftnav-sub {
             color: #000;
             font-size: 0.74em;
         }
 
-        .leftnav-sub:hover{
+        .leftnav-sub:hover {
             color: orangered;
+        }
+
+        .filters{
+            position: absolute; 
+            bottom: 0;
         }
 
         .leftnav-active {
@@ -163,6 +168,14 @@
                 <a class="nav-link leftnav" href="#">ACCESSORIES</a>
                 <a class="nav-link leftnav" href="#">BRANDS</a>
             </nav>
+            <a class="dropup nav-link leftnav filters" href="#">
+                <span type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    FILTERS
+                </span>
+                <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                </div>
+            </a>
         </div>
     </div>
 
