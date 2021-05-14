@@ -22,25 +22,9 @@
             background-color: orangered;
         }
 
-        .navbar {
-            padding: 0px;
-        }
-
         .warehouse {
             background: #292b2c;
             line-height: 0.7;
-        }
-
-        .row-header {
-            margin: 0px auto;
-            padding: 0px auto;
-        }
-
-        .row-content {
-            margin: 0px auto;
-            padding: 50px 0px 50px 0px;
-            border-bottom: 1px ridge;
-            min-height: 400px;
         }
 
         .navbar-light {
@@ -64,6 +48,35 @@
 
         .divr {
             border-bottom: 3px solid orangered;
+        }
+
+        
+
+        .leftnav {
+            color: rgb(0, 0, 0, 0.5);
+        }
+
+        .leftnav:hover {
+            color: #000;
+            border-left: 4px solid orangered;
+        }
+
+        /* this is for left navbar sublinks */        
+        .leftnav-sub{
+            color: #000;
+            font-size: 0.74em;
+        }
+
+        .leftnav-sub:hover{
+            color: orangered;
+        }
+
+        .leftnav-active {
+            border-left: 4px solid orangered;
+        }
+
+        .active {
+            color: orangered;
         }
     </style>
 </head>
@@ -135,11 +148,23 @@
             <div class="divr col-12 col-md-9 col-lg-10">
             </div>
         </div>
-    </div>
 
-    <!-- Header -->
-    <header>
-    </header>
+        <!-- left navigation -->
+        <div class="row mt-5">
+            <nav class="col-12 col-md-3 col-lg-2 nav flex-column">
+                <a class="nav-link leftnav leftnav-active" data-toggle="collapse" href="#LeftNavbar">SKATEBORADS</a>
+                <div class="collapse offset-md-1" id="LeftNavbar">
+                    <a class="nav-link leftnav-sub" href="#">Decks</a>
+                    <a class="nav-link active leftnav-sub" href="#">Complete Skateborads</a>
+                    <a class="nav-link leftnav-sub" href="#">Build Your Own</a>
+                    <a class="nav-link leftnav-sub" href="#">Trucks</a>
+                </div>
+                <a class="nav-link leftnav" href="#">LONGBOARDS</a>
+                <a class="nav-link leftnav" href="#">ACCESSORIES</a>
+                <a class="nav-link leftnav" href="#">BRANDS</a>
+            </nav>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
