@@ -119,7 +119,6 @@
         /* this is not a bootstrap class, bootstrap only has classes from 1-12, no fractions */
         /* this is 3.5 ~ 29.1666667% */
         .col-lg-3-5 {
-            @extend .extra-col;
             flex: 0 0 26%;
             max-width: 26%;
         }
@@ -197,7 +196,7 @@
 
         <div class="row mt-5 pt-2">
             <!-- left navigation -->
-            <nav class="col-12 col-md-3 col-lg-2 nav flex-column" style="bacground: blue;">
+            <nav class="col-12 col-md-3 col-lg-2 nav flex-column">
                 <a class="nav-link leftnav leftnav-active text-color2" data-toggle="collapse"
                     href="#LeftNavbar">SKATEBORADS</a>
                 <div class="collapse offset-md-1" id="LeftNavbar">
@@ -210,7 +209,7 @@
                 <a class="nav-link leftnav text-color2" href="#">ACCESSORIES</a>
                 <a class="nav-link leftnav text-color2" href="#">BRANDS</a>
             </nav>
-            <a class="dropup nav-link leftnav filters text-color2" href="#">
+            <a id="nav-filters" class="dropup nav-link leftnav filters text-color2" href="#">
                 <span type="button" class="dropdown-toggle" data-toggle="dropdown">
                     FILTERS
                 </span>
@@ -319,6 +318,14 @@
                 if ($(window).width() <= 960) {
                     $('.card-el').removeClass('col-lg-3-5');
                 }
+
+                if ($(window).width() >= 720) {
+                    $('#nav-filters').addClass('filters');
+                }
+
+                if ($(window).width() <= 720) {
+                    $('#nav-filters').removeClass('filters');
+                }
             });
 
             if ($(window).width() >= 960) {
@@ -327,6 +334,14 @@
 
             if ($(window).width() <= 960) {
                 $('.card-el').removeClass('col-lg-3-5');
+            }
+
+            if ($(window).width() >= 720) {
+                $('#nav-filters').addClass('filters');
+            }
+
+            if ($(window).width() <= 720) {
+                $('#nav-filters').removeClass('filters');
             }
         });
     </script>
