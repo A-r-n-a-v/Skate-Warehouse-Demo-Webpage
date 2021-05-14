@@ -101,15 +101,20 @@
             padding: 0;
         }
 
-        .card{
+        .card {
             z-index: 1;
             min-height: 200px;
             max-height: 200px;
+        }
+
+        .card-title {
+            line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
+    
     <div class="container">
         <div class="row justify-content-center">
             <nav class="col-12 navbar navbar-light navbar-expand-sm p-0 row" width="80%">
@@ -180,7 +185,8 @@
         <div class="row mt-5 pt-2">
             <!-- left navigation -->
             <nav class="col-12 col-md-3 col-lg-2 nav flex-column">
-                <a class="nav-link leftnav leftnav-active text-color2" data-toggle="collapse" href="#LeftNavbar">SKATEBORADS</a>
+                <a class="nav-link leftnav leftnav-active text-color2" data-toggle="collapse"
+                    href="#LeftNavbar">SKATEBORADS</a>
                 <div class="collapse offset-md-1" id="LeftNavbar">
                     <a class="nav-link leftnav-sub text-color2" href="#">Decks</a>
                     <a class="nav-link active leftnav-sub text-color2" href="#">Complete Skateborads</a>
@@ -206,31 +212,15 @@
                     <img class="p-0" src="./ALWWCMP_1.png" alt="Card Image Wonder Woman">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Amost Wonder Woman Color Mid Complete</h5>
-                            <p class="card-text">7.0 x 29</p>
-                            <p class="price text-color1 text-right h4"><strong>$74.99</strong></p>
+                            <h5 class="card-title text-color2">Amost Wonder Woman Color Mid Complete<br><small>7.0 x
+                                    29</small></h5>
+                            <p class="text-color1 text-right h4"><strong>$74.99</strong></p>
                         </div>
                     </div>
                 </div>
-                
-                <!-- <div class="col-12 col-md-4 col-lg-3" style="background: blue;">
-                    <div class="card row" style="max-height: 15rem">
-                        <img class="col-4 w-5 p-0" src="./ALWWCMP_1.png" alt="Card Image Wonder Woman">
-                        <div class="card-body col-8 pl-0" style="background: yellow">
-                            <h5 class="card-title">Amost Wonder Woman Color Mid Complete</h5>
-                            <p class="card-text">7.0 x 29</p>
-                            <p class="price">$74.99</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
+
         </div>
-    </div>
-
-    <div class="row mt-5">
-
-    </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
