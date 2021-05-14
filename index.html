@@ -111,8 +111,17 @@
             line-height: 1.6;
         }
 
+        /* this is not a bootstrap class, bootstrap only has classes form 1-6 */
         .mb-6 {
             margin-bottom: 4rem;
+        }
+
+        /* this is not a bootstrap class, bootstrap only has classes from 1-12, no fractions */
+        /* this is 3.5 ~ 29.1666667% */
+        .col-lg-3-5 {
+            @extend .extra-col;
+            flex: 0 0 26%;
+            max-width: 26%;
         }
     </style>
 </head>
@@ -212,8 +221,9 @@
 
             <!-- page body - skateboards using cards -->
             <!-- develpoed as xs to lg, mobile first approach -->
-            <div class="col-12 col-md-9 col-lg-10 mt-5 ml-4 mt-md-0 ml-md-0 p-4 p-md-0 pl-md-5 justify-content-between row">
-                <div class="col-12 col-md-5 col-lg-3 p-0 mb-6">
+            <div
+                class="col-12 col-md-9 col-lg-10 mt-5 ml-4 mt-md-0 ml-md-0 p-4 p-md-0 pl-md-5 justify-content-between row">
+                <div class="col-12 col-md-5 p-0 mb-6 card-el">
                     <img class="p-0" src="./ALWWCMP_1.png" alt="Card Image Wonder Woman">
                     <div class="card">
                         <div class="card-body">
@@ -224,7 +234,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 col-lg-3 p-0 mb-6 offset-lg-1">
+                <div class="col-12 col-md-5 p-0 mb-6 card-el">
                     <img class="p-0" src="./rs.php.png" alt="Card Image Wonder Woman">
                     <div class="card">
                         <div class="card-body">
@@ -235,7 +245,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 col-lg-3 p-0 mb-6 offset-lg-1">
+                <div class="col-12 col-md-5 p-0 mb-6 card-el">
                     <img class="p-0" src="./ALWWCMP_1.png" alt="Card Image Wonder Woman">
                     <div class="card">
                         <div class="card-body">
@@ -246,7 +256,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 col-lg-3 p-0 mb-6">
+                <div class="col-12 col-md-5 p-0 mb-6 card-el">
                     <img class="p-0" src="./rs.php.png" alt="Card Image Wonder Woman">
                     <div class="card">
                         <div class="card-body">
@@ -257,7 +267,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 col-lg-3 p-0 mb-6 offset-lg-1">
+                <div class="col-12 col-md-5 p-0 mb-6 card-el">
                     <img class="p-0" src="./ALWWCMP_1.png" alt="Card Image Wonder Woman">
                     <div class="card">
                         <div class="card-body">
@@ -268,7 +278,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 col-lg-3 p-0 mb-6 offset-lg-1">
+                <div class="col-12 col-md-5 p-0 mb-6 card-el">
                     <img class="p-0" src="./rs.php.png" alt="Card Image Wonder Woman">
                     <div class="card">
                         <div class="card-body">
@@ -300,6 +310,24 @@
                 $('#search-sign').hide();
                 $('#search-bar').show();
             });
+
+            $(window).on('resize', function () {
+                if ($(window).width() >= 960) {
+                    $('.card-el').addClass('col-lg-3-5');
+                }
+
+                if ($(window).width() <= 960) {
+                    $('.card-el').removeClass('col-lg-3-5');
+                }
+            });
+
+            if ($(window).width() >= 960) {
+                $('.card-el').addClass('col-lg-3-5');
+            }
+
+            if ($(window).width() <= 960) {
+                $('.card-el').removeClass('col-lg-3-5');
+            }
         });
     </script>
 </body>
